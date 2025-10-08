@@ -6,7 +6,7 @@
     */
 
 html {
-  background-color: white;
+    background-color: white;
 }
 
 /* Box styles */
@@ -16,4 +16,11 @@ body {
     width: 500px;
     background-color: #efefef;
     margin: 0 auto;
+}
+
+ul {
+    background-color: white;
+    border: 5px solid purple;
+    padding: 30px;
+    border-radius: 20px;
 }
