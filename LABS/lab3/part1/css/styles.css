@@ -24,3 +24,20 @@ ul {
     padding: 30px;
     border-radius: 20px;
 }
+
+/* Text styles */
+h1 {
+    color: darkslategray;
+    font-size: 2rem;
+    border-bottom: 10px dotted purple;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    }
+
+div.job-title {
+    color: darkslategray;
+    font-weight: bold;
+    }
