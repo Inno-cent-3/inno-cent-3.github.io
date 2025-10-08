@@ -1,14 +1,19 @@
 	/*
     Name: Innocent Amini
-	Date: 08 September 2025
+	Date: 08 October 2025
 	File: index.html
-	Desc: This is the home page for my INNO-CENT3 website 
+	Desc: This is the CSS file for the lab 3 assignment part 1.
     */
 
 html {
   background-color: white;
 }
 
+/* Box styles */
 body {
-  font: 1.2em / 1.5 system-ui;
+    font: 1.2em / 1.5 system-ui;
+    padding: 20px;
+    width: 500px;
+    background-color: #efefef;
+    margin: 0 auto;
 }
