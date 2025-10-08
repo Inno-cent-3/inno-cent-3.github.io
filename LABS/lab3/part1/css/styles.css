@@ -41,3 +41,15 @@ div.job-title {
     color: darkslategray;
     font-weight: bold;
     }
+
+/* Link styles */
+a {
+    color: green;
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+    color: darkgreen;
+    text-decoration: none;
+}
