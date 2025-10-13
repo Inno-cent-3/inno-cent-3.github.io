@@ -80,9 +80,10 @@ a {
 }
 
 a[href*="http"] {
-    background: url(external-link-52.png) no-repeat right center;
-    background-size: 14px 14px;
-    padding-right: 16px;
+    background: url(external-link-52.png) 
+    no-repeat right center;
+    background-size: 15px 15px;
+    padding-right: 20px;
 }
 
 a:link,
@@ -109,4 +110,40 @@ ul {
 
 ol {
     list-style-type: lower-roman;
+}
+
+
+/*5. menu styling*/
+nav ul {
+    padding-left: 0;
+}
+
+nav li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+nav li a {
+    font-family: "Bevan", serif;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 2.5;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 1px solid #aa6666;
+}
+
+nav li a:focus,
+nav li a:hover {
+    color: white;
+    background: #aa6666;
+}
+
+nav li a:active {
+    color: white;
+    background: black;
 }
