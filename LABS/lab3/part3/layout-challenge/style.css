@@ -66,4 +66,7 @@ nav a {
 
 .feature {
     width: 200px;
+    /* 3. Wrap text around feature image to the right and bottom */
+    float: left;
+    margin:  8px 20px 10px 0;
 }
