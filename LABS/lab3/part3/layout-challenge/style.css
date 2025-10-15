@@ -36,15 +36,20 @@ img {
 nav {
     background-color: black;
     padding: 0.5em;
+    /* 2 navigation bar sticking to top of viewport */
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    gap: 8em;
+
+    /* 1 navigation items in a row */
     display: flex;
     justify-content: center;
-    gap: 8em;
 }
 
 nav a {
