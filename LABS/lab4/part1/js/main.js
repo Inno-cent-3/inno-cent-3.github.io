@@ -1,3 +1,9 @@
+/*
+    Name: Innocent Amini
+	Date: 19 November 2025
+	File: main.js
+	Desc: This is the JavaScript file for the lab 4 assignment part 1.
+*/
 // Complete variable definitions and random functions
 
 const customName = document.getElementById("custom-name");
