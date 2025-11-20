@@ -1,11 +1,11 @@
 /*
-    Name: Innocent Amini
+  Name: Innocent Amini
 	Date: 19 November 2025
 	File: main.js
 	Desc: This is the JavaScript file for the lab 4 assignment part 1.
 */
 // Complete variable definitions and random functions
-alert("IN main.js");
+
 const customName = document.getElementById("custom-name");
 const generateBtn = document.querySelector(".generate");
 const story = document.querySelector(".story");
@@ -24,15 +24,15 @@ const events = [ "spontaneously combusted", "melted into a puddle on the sidewal
 
 // Partial return random string function
 function returnRandomStoryString() {
-  let storyText = "It was 94 Fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
   const randomCharacter = randomValueFromArray(characters);
   const randomPlace = randomValueFromArray(places);
   const randomEvent= randomValueFromArray(events);
+  let storyText = "It was 94 Fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
   
   storyText = storyText.replaceAll(":insertx:", randomCharacter);
   storyText = storyText.replaceAll(":inserty:", randomPlace);
   storyText = storyText.replaceAll(":insertz:", randomEvent);
-  //alert(storyText);
+
 
   return storyText;
 }
