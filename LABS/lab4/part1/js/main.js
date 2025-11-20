@@ -5,7 +5,7 @@
 	Desc: This is the JavaScript file for the lab 4 assignment part 1.
 */
 // Complete variable definitions and random functions
-//alert("IN main.js");
+alert("IN main.js");
 const customName = document.getElementById("custom-name");
 const generateBtn = document.querySelector(".generate");
 const story = document.querySelector(".story");
@@ -54,9 +54,7 @@ function generateStory() {
     newStory = newStory.replace("300 pounds", weight);
     newStory = newStory.replace("94 Fahrenheit", temperature);
 
-
   }
-
   // TODO: replace "" with the correct expression
   story.textContent = newStory;
   story.style.visibility = "visible";
