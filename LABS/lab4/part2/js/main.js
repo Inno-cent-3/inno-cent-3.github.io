@@ -16,8 +16,8 @@ const images = [{filename: "pic1.jpg", alt: "Closeup of a human eye"}, {filename
 {filename:"pic5.jpg", alt:"Large moth on a leaf"} ]
 
 const baseURL =
-"https://raw.githubusercontent.com/mdn/learning-area/master/javascript/apis/document/image-gallery/images/";
-
+// "https://raw.githubusercontent.com/mdn/learning-area/master/javascript/apis/document/image-gallery/images/";
+pass
     // using a for...of loop
 for (const image of images) {
     const newImage = document.createElement("img");
@@ -34,9 +34,13 @@ for (const image of images) {
             updateDisplayedImage(newImage);
         }
     });
-  // keydown event handler
+    // keydown event handler
 }
-
+// Define the updateDisplayedImage function
+function updateDisplayedImage(img) {
+    displayedImage.src = img.src;
+    displayedImage.alt = img.alt;
+}
 
 
 
