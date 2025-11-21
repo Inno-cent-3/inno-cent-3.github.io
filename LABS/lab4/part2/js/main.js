@@ -41,12 +41,9 @@ for (const image of images) {
     // keydown event handler
 }
 // Define the updateDisplayedImage function
-// function updateDisplayedImage(img) {
-//     displayedImage.src = img.src;
-//     displayedImage.alt = img.alt;
 function updateDisplayedImage(event) {
-  displayedImage.src = event.target.src;
-  displayedImage.alt = event.target.alt;
+    displayedImage.src = event.target.src;
+    displayedImage.alt = event.target.alt;
 }
 
 // Darken/Lighten button event handler
