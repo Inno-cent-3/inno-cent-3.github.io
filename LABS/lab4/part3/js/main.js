@@ -1,3 +1,10 @@
+/*
+Name: Innocent Amini
+	Date: 23 November 2025
+	File: main.js
+	Desc: This is the JavaScript file for the lab 4 assignment part 3.
+*/
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
@@ -17,3 +24,4 @@ function random(min, max) {
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
+
