@@ -1,4 +1,9 @@
-
+/*
+Name: Innocent Amini
+	Date: 25 November 2025
+	File: main.js
+	Desc: This is the JavaScript file for the lab 4 assignment part 4.
+*/
 
 // setup canvas
 
