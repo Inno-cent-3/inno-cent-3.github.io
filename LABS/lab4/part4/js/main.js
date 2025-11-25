@@ -161,36 +161,47 @@ class EvilCircle extends Shape {
 
 // create array to store balls
 
+// create balls
 const balls = [];
+const para = document.querySelector("p");
+let ballCount = 0;
 
 while (balls.length < 25) {
-    const size = random(10, 20);
-    const ball = new Ball(
-        // ball position always drawn at least one ball width
-        // away from the edge of the canvas, to avoid drawing errors
-        random(0 + size, width - size),
-        random(0 + size, height - size),
-        random(-7, 7),
-        random(-7, 7),
-        randomRGB(),
-        size,
-    );
-
-    balls.push(ball);
+  const size = random(10, 20);
+  const ball = new Ball(
+    random(size, width - size),
+    random(size, height - size),
+    random(-7, 7),
+    random(-7, 7),
+    size,
+    randomRGB()
+  );
+  balls.push(ball);
+  ballCount++;
+  para.textContent = "Ball count: " + ballCount;
 }
+
+// create evil circle
+const evilCircle = new EvilCircle(random(0, width), random(0, height));
 
 // animation loop
 function loop() {
-    ctx.fillStyle = "rgb(0 0 0 / 25%)";
-    ctx.fillRect(0, 0, width, height);
+  ctx.fillStyle = "rgb(0 0 0 / 25%)";
+  ctx.fillRect(0, 0, width, height);
 
-    for (const ball of balls) {
-        ball.draw();
-        ball.update();
-        ball.collisionDetect();
+  for (const ball of balls) {
+    if (ball.exists) {
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
     }
+  }
 
-    requestAnimationFrame(loop);
+  evilCircle.draw();
+  evilCircle.checkBounds();
+  evilCircle.collisionDetect();
+
+  requestAnimationFrame(loop);
 }
 
 loop();
