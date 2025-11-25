@@ -126,6 +126,38 @@ class EvilCircle extends Shape {
       }
     });
   }
+  // draw method for EvilCircle and update to stroke style
+  draw() {
+    ctx.beginPath();
+    ctx.strokeStyle = this.color;
+    ctx.lineWidth = 3;
+    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+    ctx.stroke();
+  }
+  // check bounds method for EvilCircle 
+  checkBounds() {
+    if (this.x + this.size >= width) this.x = width - this.size;
+    if (this.x - this.size <= 0) this.x = this.size;
+    if (this.y + this.size >= height) this.y = height - this.size;
+    if (this.y - this.size <= 0) this.y = this.size;
+  }
+// collision detection method for EvilCircle
+  collisionDetect() {
+    for (const ball of balls) {
+      if (ball.exists) {
+        const dx = this.x - ball.x;
+        const dy = this.y - ball.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < this.size + ball.size) {
+          ball.exists = false;
+          ballCount--;
+          para.textContent = "Ball count: " + ballCount;
+        }
+      }
+    }
+  }
+}
 
 // create array to store balls
 
