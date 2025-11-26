@@ -20,8 +20,9 @@
     if you do, we'll enter you into a prize draw where you'll have a chance
     to win prizes.
 
-    --
-
+    <!-- ===================== FACILITIES ===================== -->
+    <form>
+          <div class="form-section">
     Facilities
         <!-- Porridge -->
         <fieldset>
@@ -51,7 +52,7 @@
             >Just right?</label
           >
             </fieldset>
-            
+        
         <!-- Chairs -->
         <fieldset>
           <legend>Describe the chairs (select all you agree with)</legend>
@@ -71,8 +72,9 @@
             <label for=Majestic>Majestic</label
             >
         </fieldset>
+          </div>
 
-    --
+          <div class="form-section">
 
     About your hosts
             <!-- Favorite bear -->
@@ -96,21 +98,23 @@
         <option value="Claw marks in the door">Claw marks in the door</option>
       </select>
     </div>
+        </div>
 
-    --
+
           <!-- ===================== FEEDBACK ===================== -->
-    Any other feedback?
-
+        <div class="form-section">    
+        
+          Any other feedback?
 
         <label for="comments">Give us your comments</label>
-        <br />
+
         <textarea id="comments" name="comments"></textarea>
       </div>
 
-    --
       <!-- ===================== CONTACT DETAILS ===================== -->
-
+      <div class="form-section">
     Your details
+
         <div class="separator">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" />
@@ -128,11 +132,11 @@
       </div>
 
 
-    --
+    <div class="form-section">
 
       <!-- ===================== SUBMIT ===================== -->
       <button type="submit">Submit</button>
-
-    --
+    </div>
+    </form>
   </body>
 </html>
