@@ -23,57 +23,115 @@
     --
 
     Facilities
+        <!-- Porridge -->
+        <fieldset>
+    <legend>Was the porridge</legend>
+          <input
+            type="radio" id="choice-1" name="porridge" value="Too hot" checked />
+            <label for="choice-1">Too hot?</label>
+          <input
+            type="radio" id="choice-2" name="porridge" value="Too cold" />
+            <label for="choice-2">Too cold?</label>
+          <input type="radio" id="choice-3" name="porridge" value="Just right" />
+            <label for="choice-3">Just right?</label>
+        </fieldset>
 
-    Was the porridge
-    Too hot?
-    Too cold?
-    Just right?
-
-    Were the beds
-    Too hard?
-    Too soft?
-    Just right?
-
-    Describe the chairs (select all you agree with)
-    Comfy
-    Luxurious
-    Hi tec
-    Pretty
-    Majestic
+        <!-- Beds -->
+        <fieldset>
+          <legend>Were the beds</legend>
+          <input type="radio" id="bedchoice-1" name="beds" value="Too hard" checked />
+            <label for="bedchoice-1">Too hard?</label
+            >
+          <input type="radio" id="bedchoice-2" name="beds" value="Too soft" /><label
+            for="bedchoice-2"
+            >Too soft?</label
+          >
+          <input type="radio" id="bedchoice-3" name="beds" value="Just right" /><label
+            for="bedchoice-3"
+            >Just right?</label
+          >
+            </fieldset>
+            
+        <!-- Chairs -->
+        <fieldset>
+          <legend>Describe the chairs (select all you agree with)</legend>
+          <input type="checkbox" id="Comfy" name="chairs" value="Comfy" />
+            <label for=Comfy>Comfy</label
+            >
+            <input type="checkbox" id="Luxurious" name="Luxurious" value="Luxurious" />
+            <label for=Luxurious>Luxurious</label
+            >
+            <input type="checkbox" id="Hi tec" name="Hi tec" value="Hi tec" />
+            <label for=Hi-tec>  </label
+              >
+            <input type="checkbox" id="Pretty" name="Pretty" value="Pretty" />
+            <label for=Pretty>Pretty</label
+            >
+            <input type="checkbox" id="Majestic" name="Majestic" value="Majestic" />
+            <label for=Majestic>Majestic</label
+            >
+        </fieldset>
 
     --
 
     About your hosts
+            <!-- Favorite bear -->
+<div class="separator">
+          <label for = "favorite">Who's your favourite bear?</label>
+          <select name="favorite" id="favorite">
+            <option value="Papa-bear">Papa bear</option>
+            <option value="Mama-bear">Mama bear</option>
+            <option value="Junior">Junior</option>
+            <option value="Dozer">Dozer</option>
+          </select>
+        </div>
 
-    Who's your favorite bear?
-    Papa bear
-    Mama bear
-    Junior
-    Dozer
-
-    Which greeting did you prefer?
-    Wave
-    Friendly greeting
-    Growl
-    Claw marks in the door
+    <!-- Preferred greeting -->
+<div class="separator">
+      <label for="greeting">Preferred greeting from the bears:</label>
+      <select name="greeting" id="greeting">
+        <option value="Wave">Wave</option>
+        <option value="Friendly greeting">Friendly greeting</option>  
+        <option value="Growl">Growl</option>
+        <option value="Claw marks in the door">Claw marks in the door</option>
+      </select>
+    </div>
 
     --
-
+          <!-- ===================== FEEDBACK ===================== -->
     Any other feedback?
 
-    Give us your comments
+
+        <label for="comments">Give us your comments</label>
+        <br />
+        <textarea id="comments" name="comments"></textarea>
+      </div>
 
     --
+      <!-- ===================== CONTACT DETAILS ===================== -->
 
     Your details
+        <div class="separator">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
 
-    Name
-    Email
-    Phone
+        <div class="separator">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="separator">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+      </div>
+
 
     --
 
-    Submit
+      <!-- ===================== SUBMIT ===================== -->
+      <button type="submit">Submit</button>
 
     --
   </body>
