@@ -1,3 +1,10 @@
+/*
+Name: Innocent Amini
+	Date: 2 December 2025
+	File: main.js
+	Desc: This is the JavaScript file for Accessibility troubleshooting assignment.
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
